@@ -1,6 +1,6 @@
 {
   "name": "mcore-ext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mcore ext",
   "main": "index.js",
   "dependencies": {
