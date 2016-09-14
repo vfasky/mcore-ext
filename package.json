@@ -1,0 +1,28 @@
+{
+  "name": "mcore-ext",
+  "version": "1.0.0",
+  "description": "mcore ext",
+  "main": "index.js",
+  "dependencies": {
+    "form-serializer": "^2.5.0",
+    "sprintf-js": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vfasky/mcore-ext.git"
+  },
+  "keywords": [
+    "mcore",
+    "ext"
+  ],
+  "author": "vfasky@gmail.com",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/vfasky/mcore-ext/issues"
+  },
+  "homepage": "https://github.com/vfasky/mcore-ext#readme"
+}
