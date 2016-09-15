@@ -6,7 +6,6 @@
 'use strict'
 
 _cachePre = '__cache_'
-
 _localStorage = require './storage'
 
 module.exports =
@@ -19,6 +18,7 @@ module.exports =
         _localStorage.set _cachePre + key, data
 
     get: (key, defaultVal = null)->
+
         data = _localStorage.get _cachePre + key
 
         return defaultVal if data == undefined
