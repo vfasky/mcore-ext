@@ -256,6 +256,8 @@ module.exports = (mcore)->
             callback = Template.strToFun(el, value) or ->
             proxyEnv = Template.getEnv el
             $form = $ el
+            # 禁用 html5 验证
+            $form.attr 'novalidate', ''
 
             validatorForm = (callback)->
                 rules = getRules $form
@@ -307,8 +309,9 @@ module.exports = (mcore)->
             $form.off('submit.validator').on 'submit.validator', ->
                 try
                     validatorForm callback
-                catch error
-                    console.log error
+                catch err
+                    console.error err.stack
+                    # console.log error
 
                 false
 
