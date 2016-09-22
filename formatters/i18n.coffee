@@ -25,6 +25,12 @@ module.exports = (mcore)->
     i18n = (args...)->
         dict = getDict()
         args[0] = String(args[0]).trim()
+         
+        if args.length > 1 and args[0].indexOf('%s') == -1 and args[1].indexOf('%s') != -1
+            v = args[0]
+            k = args[1]
+            args[0] = k
+            args[1] = v
 
         # 字典存在，翻译
         if dict[args[0]]

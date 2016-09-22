@@ -245,11 +245,12 @@ module.exports = (mcore)->
     Template.binders['validator'] = Template.binders['validated'] =
         update: (el, value)->
             if el.tagName.toLowerCase() == 'form'
+                el.setAttribute 'novalidate', 'novalidate'
                 return false
 
             el.setAttribute 'validator', value
 
-        rendered:(el, value)->
+        init:(el, value)->
             if el.tagName.toLowerCase() != 'form' or !el._element
                 return el.setAttribute 'validator', value
 
@@ -257,7 +258,8 @@ module.exports = (mcore)->
             proxyEnv = Template.getEnv el
             $form = $ el
             # 禁用 html5 验证
-            $form.attr 'novalidate', ''
+            el.setAttribute 'novalidate', 'novalidate'
+            # console.log '?'
 
             validatorForm = (callback)->
                 rules = getRules $form
