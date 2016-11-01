@@ -1,14 +1,17 @@
 {
   "name": "mcore-ext",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "mcore ext",
   "main": "index.js",
   "dependencies": {
+    "@types/jquery": "^2.0.33",
+    "@types/sprintf-js": "^0.0.27",
     "form-serializer": "^2.5.0",
-    "sprintf-js": "^1.0.3"
+    "mcore3": "^3.1.3",
+    "sprintf-js": "^1.0.3",
+    "typescript": "^2.0.6"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
