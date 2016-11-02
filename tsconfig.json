@@ -8,6 +8,7 @@
         "allowJs": true
     },
     "include": [
+        "test.ts",
         "tag/**/*.ts",
         "ui/**/*.ts",
         "formatters/**/*.ts",

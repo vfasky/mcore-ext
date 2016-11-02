@@ -22,7 +22,7 @@ var Popover = (function (_super) {
     }
     Popover.prototype.getOffset = function () {
         var $el = this.$curEl;
-        var offset = $el.offset();
+        var offset = $el.offset() || { top: 0, left: 0 };
         var elHeight = $el.outerHeight() || 20;
         var className = 'mc-popover-top';
         offset.top = offset.top - document.body.scrollTop;

@@ -30,7 +30,8 @@ export default class Popover extends Component {
 
     private getOffset() {
         let $el = this.$curEl
-        let offset = $el.offset()
+        let offset = $el.offset() || {top: 0, left: 0}
+        
         let elHeight = $el.outerHeight() || 20
         let className = 'mc-popover-top'
 
