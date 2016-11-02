@@ -4,7 +4,17 @@
         "target": "es5",
         "moduleResolution": "node",
         "module": "commonjs",
-        "sourceMap": true,
+        "sourceMap": false,
         "allowJs": true
-    }
+    },
+    "include": [
+        "tag/**/*.ts",
+        "ui/**/*.ts",
+        "formatters/**/*.ts",
+        "util/**/*.ts",
+        "binder/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }
