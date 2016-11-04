@@ -260,7 +260,7 @@ function getNameValue (data, name: string, $el: JQuery) {
     return $el.val().trim()
 }
 
-Template.binders['validator'] = Template.binders['validated'] = {
+export let register = Template.binders['validator'] = Template.binders['validated'] = {
     update: function (el: HTMLElement, value){
         if (el.tagName.toLowerCase() == 'form') {
             el.setAttribute('novalidate', 'novalidate')
@@ -344,6 +344,8 @@ Template.binders['validator'] = Template.binders['validated'] = {
         })
     }
 }
+
+
 
 export function add (x: string, fun, errMsg: string = '') {
     _rule[x] = fun

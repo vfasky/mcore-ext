@@ -243,7 +243,7 @@ function getNameValue(data, name, $el) {
     }
     return $el.val().trim();
 }
-mcore3_1.Template.binders['validator'] = mcore3_1.Template.binders['validated'] = {
+exports.register = mcore3_1.Template.binders['validator'] = mcore3_1.Template.binders['validated'] = {
     update: function (el, value) {
         if (el.tagName.toLowerCase() == 'form') {
             el.setAttribute('novalidate', 'novalidate');
