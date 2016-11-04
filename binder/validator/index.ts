@@ -9,7 +9,7 @@
 
 import * as $ from 'jquery'
 import { Template, util } from 'mcore3'
-import 'form-serialize'
+import 'form-serializer'
 
 if (typeof String.prototype.trim === 'undefined') {
     (<any>String).prototype.trim = function (x) {

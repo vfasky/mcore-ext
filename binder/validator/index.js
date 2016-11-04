@@ -7,7 +7,7 @@
 'use strict';
 var $ = require('jquery');
 var mcore3_1 = require('mcore3');
-require('form-serialize');
+require('form-serializer');
 if (typeof String.prototype.trim === 'undefined') {
     String.prototype.trim = function (x) {
         return $.trim(x);
