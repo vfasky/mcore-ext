@@ -13,6 +13,6 @@
  **/
 'use strict'
 
-import './popover.scss'
+import '!style-loader!css-loader!sass-loader!./popover.scss'
 import Popover from './popover'
 export default Popover
