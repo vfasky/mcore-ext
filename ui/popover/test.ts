@@ -24,7 +24,7 @@ describe('test ui popover', () => {
         })
 
         testUtil.onRender(popover, () => {
-            $popover = testUtil.$(popover.el).find('.mc-popover')
+            $popover = testUtil.$(popover.el).find('.mc-ui-popover')
 
             testUtil.expect(
                 $popover.find('.mc-popover-inner').text().trim()

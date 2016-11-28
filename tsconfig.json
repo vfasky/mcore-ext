@@ -4,6 +4,11 @@
         "target": "es5",
         "moduleResolution": "node",
         "module": "commonjs",
+        "lib": [
+            "dom",
+            "es2015.promise",
+            "es5"
+        ],
         "sourceMap": false,
         "allowJs": true
     },
@@ -13,7 +18,8 @@
         "ui/**/*.ts",
         "formatters/**/*.ts",
         "util/**/*.ts",
-        "binder/**/*.ts"
+        "binder/**/*.ts",
+        "tool/**/*.ts"
     ],
     "exclude": [
         "node_modules"

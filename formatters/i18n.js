@@ -77,5 +77,13 @@ function loadDict(name, dict) {
     _dict[name] = dict;
 }
 exports.loadDict = loadDict;
-mcore3_1.Template.formatters['i18n'] = mcore3_1.Template.formatters['_'] = i18n;
+/**
+ * @example
+ *
+ * ```html
+ * {'hello %s' | _ 'mcore'}
+ * <input mc-placeholder="'hello %s' | _ 'mcore'">
+ * ```
+ */
+exports.register = mcore3_1.Template.formatters['i18n'] = mcore3_1.Template.formatters['_'] = i18n;
 mcore3_1.Template.formatters['%'] = mcore3_1.Template.formatters['sprintf'] = sprintf_js_1.sprintf;

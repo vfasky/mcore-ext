@@ -82,5 +82,13 @@ export function loadDict (name: string, dict) {
     _dict[name] = dict
 }
 
-Template.formatters['i18n'] = Template.formatters['_'] = i18n
+/**
+ * @example
+ * 
+ * ```html
+ * {'hello %s' | _ 'mcore'}
+ * <input mc-placeholder="'hello %s' | _ 'mcore'">
+ * ```
+ */
+export let register = Template.formatters['i18n'] = Template.formatters['_'] = i18n
 Template.formatters['%'] = Template.formatters['sprintf'] = sprintf

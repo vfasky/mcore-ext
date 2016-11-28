@@ -18,7 +18,7 @@ describe('test ui popover', function () {
             err: 'err msg'
         });
         index_1.default.onRender(popover, function () {
-            $popover = index_1.default.$(popover.el).find('.mc-popover');
+            $popover = index_1.default.$(popover.el).find('.mc-ui-popover');
             index_1.default.expect($popover.find('.mc-popover-inner').text().trim()).to.equal('err msg');
             index_1.default.expect($popover.is('.active')).to.equal(true);
             done();

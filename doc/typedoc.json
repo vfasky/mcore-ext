@@ -1,0 +1,5348 @@
+{
+  "ui/popover": {
+    "fileSoures": [
+      "/Users/vfasky/git/mcore-ext/ui/popover/popover.ts"
+    ],
+    "index": "/Users/vfasky/git/mcore-ext/ui/popover/index.ts",
+    "doc": {
+      "id": 0,
+      "name": "mcore-ext",
+      "kind": 0,
+      "flags": {},
+      "children": [
+        {
+          "id": 1,
+          "name": "popover\"",
+          "kind": 1,
+          "kindString": "External module",
+          "flags": {
+            "isExported": true
+          },
+          "originalName": "/Users/vfasky/git/mcore-ext/ui/popover/popover.ts",
+          "children": [
+            {
+              "id": 5,
+              "name": "Popover",
+              "kind": 128,
+              "kindString": "Class",
+              "flags": {
+                "isExported": true
+              },
+              "children": [
+                {
+                  "id": 101,
+                  "name": "EventEmitter",
+                  "kind": 2,
+                  "kindString": "Module",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "children": [
+                    {
+                      "id": 102,
+                      "name": "EventEmitter",
+                      "kind": 4194304,
+                      "kindString": "Type alias",
+                      "flags": {},
+                      "sources": [
+                        {
+                          "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/node_modules/@types/eventemitter3/index.d.ts",
+                          "line": 9,
+                          "character": 21
+                        }
+                      ],
+                      "type": {
+                        "type": "reference",
+                        "name": "self"
+                      }
+                    }
+                  ],
+                  "groups": [
+                    {
+                      "title": "Type aliases",
+                      "kind": 4194304,
+                      "children": [
+                        102
+                      ]
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/node_modules/@types/eventemitter3/index.d.ts",
+                      "line": 8,
+                      "character": 30
+                    }
+                  ]
+                },
+                {
+                  "id": 37,
+                  "name": "constructor",
+                  "kind": 512,
+                  "kindString": "Constructor",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 38,
+                      "name": "new Popover",
+                      "kind": 16384,
+                      "kindString": "Constructor signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 39,
+                          "name": "parentNode",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "reference",
+                            "name": "HTMLElement"
+                          }
+                        },
+                        {
+                          "id": 40,
+                          "name": "parentElement",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 41,
+                          "name": "args",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "type": {
+                            "type": "reflection",
+                            "declaration": {
+                              "id": 42,
+                              "name": "__type",
+                              "kind": 65536,
+                              "kindString": "Type literal",
+                              "flags": {},
+                              "sources": [
+                                {
+                                  "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                                  "line": 28,
+                                  "character": 68
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "reference",
+                        "name": "Popover",
+                        "id": 5
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.__constructor"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 27,
+                      "character": 19
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.__constructor"
+                  }
+                },
+                {
+                  "id": 31,
+                  "name": "$body",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 22,
+                      "character": 9
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.$body"
+                  }
+                },
+                {
+                  "id": 8,
+                  "name": "$curEl",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "comment": {
+                    "shortText": "当前绑定的 element"
+                  },
+                  "sources": [
+                    {
+                      "fileName": "popover.ts",
+                      "line": 25,
+                      "character": 10
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "JQuery"
+                  }
+                },
+                {
+                  "id": 32,
+                  "name": "$refs",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 23,
+                      "character": 9
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.$refs"
+                  }
+                },
+                {
+                  "id": 30,
+                  "name": "$win",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 21,
+                      "character": 8
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.$win"
+                  }
+                },
+                {
+                  "id": 23,
+                  "name": "el",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 14,
+                      "character": 6
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "HTMLElement"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.el"
+                  }
+                },
+                {
+                  "id": 9,
+                  "name": "errData",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "comment": {
+                    "shortText": "数据传入格式"
+                  },
+                  "sources": [
+                    {
+                      "fileName": "popover.ts",
+                      "line": 29,
+                      "character": 11
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "ErrDataValue",
+                    "id": 2
+                  }
+                },
+                {
+                  "id": 29,
+                  "name": "events",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 20,
+                      "character": 10
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.events"
+                  }
+                },
+                {
+                  "id": 7,
+                  "name": "hideTimeId",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "popover.ts",
+                      "line": 21,
+                      "character": 14
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  },
+                  "defaultValue": " null"
+                },
+                {
+                  "id": 20,
+                  "name": "id",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 11,
+                      "character": 6
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "number"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.id"
+                  }
+                },
+                {
+                  "id": 36,
+                  "name": "isIOS",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 27,
+                      "character": 9
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "boolean"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.isIOS"
+                  }
+                },
+                {
+                  "id": 35,
+                  "name": "isWeixinBrowser",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 26,
+                      "character": 19
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "boolean"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.isWeixinBrowser"
+                  }
+                },
+                {
+                  "id": 34,
+                  "name": "nextTick",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 25,
+                      "character": 12
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "NextTick"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.nextTick"
+                  }
+                },
+                {
+                  "id": 25,
+                  "name": "parentElement",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 16,
+                      "character": 17
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "Element"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.parentElement"
+                  }
+                },
+                {
+                  "id": 22,
+                  "name": "parentNode",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 13,
+                      "character": 14
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "HTMLElement"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.parentNode"
+                  }
+                },
+                {
+                  "id": 24,
+                  "name": "refs",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 15,
+                      "character": 8
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "HTMLElement"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.refs"
+                  }
+                },
+                {
+                  "id": 27,
+                  "name": "scope",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 18,
+                      "character": 9
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.scope"
+                  }
+                },
+                {
+                  "id": 6,
+                  "name": "showTime",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "popover.ts",
+                      "line": 20,
+                      "character": 12
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "number"
+                  },
+                  "defaultValue": "3000"
+                },
+                {
+                  "id": 33,
+                  "name": "util",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 24,
+                      "character": 8
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "\"/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/util\""
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.util"
+                  }
+                },
+                {
+                  "id": 26,
+                  "name": "virtualDom",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 17,
+                      "character": 14
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "Element"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.virtualDom"
+                  }
+                },
+                {
+                  "id": 28,
+                  "name": "virtualDomDefine",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 19,
+                      "character": 20
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.virtualDomDefine"
+                  }
+                },
+                {
+                  "id": 21,
+                  "name": "watchScope",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 12,
+                      "character": 14
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "Watch"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.watchScope"
+                  }
+                },
+                {
+                  "id": 43,
+                  "name": "beforeInit",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 44,
+                      "name": "beforeInit",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.beforeInit"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 29,
+                      "character": 14
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.beforeInit"
+                  }
+                },
+                {
+                  "id": 74,
+                  "name": "bindEvents",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 75,
+                      "name": "bindEvents",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.bindEvents"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 55,
+                      "character": 14
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.bindEvents"
+                  }
+                },
+                {
+                  "id": 64,
+                  "name": "callEvent",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 65,
+                      "name": "callEvent",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 66,
+                          "name": "event",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 67,
+                          "name": "eventName",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.callEvent"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 52,
+                      "character": 13
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.callEvent"
+                  }
+                },
+                {
+                  "id": 52,
+                  "name": "destroy",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 53,
+                      "name": "destroy",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 54,
+                          "name": "notRemove",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "type": {
+                            "type": "instrinct",
+                            "name": "boolean"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.destroy"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 33,
+                      "character": 11
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.destroy"
+                  }
+                },
+                {
+                  "id": 57,
+                  "name": "emitEvent",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 58,
+                      "name": "emitEvent",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "触发组件的自定义事件"
+                      },
+                      "parameters": [
+                        {
+                          "id": 59,
+                          "name": "eventName",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          }
+                        },
+                        {
+                          "id": 60,
+                          "name": "args",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "isArray": true,
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.emitEvent"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 41,
+                      "character": 13
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.emitEvent"
+                  }
+                },
+                {
+                  "id": 82,
+                  "name": "get",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 83,
+                      "name": "get",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "取 scope 值， 兼容 mcore2",
+                        "returns": "\n",
+                        "tags": [
+                          {
+                            "tag": "method",
+                            "text": "get"
+                          }
+                        ]
+                      },
+                      "parameters": [
+                        {
+                          "id": 84,
+                          "name": "attr",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "comment": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 85,
+                          "name": "defaultVal",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "comment": {
+                            "text": "= null"
+                          },
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.get"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 71,
+                      "character": 7
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.get"
+                  }
+                },
+                {
+                  "id": 10,
+                  "name": "getOffset",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isPrivate": true,
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 11,
+                      "name": "getOffset",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "type": {
+                        "type": "reflection",
+                        "declaration": {
+                          "id": 12,
+                          "name": "__type",
+                          "kind": 65536,
+                          "kindString": "Type literal",
+                          "flags": {},
+                          "children": [
+                            {
+                              "id": 13,
+                              "name": "className",
+                              "kind": 32,
+                              "kindString": "Variable",
+                              "flags": {},
+                              "sources": [
+                                {
+                                  "fileName": "popover.ts",
+                                  "line": 48,
+                                  "character": 21
+                                }
+                              ],
+                              "type": {
+                                "type": "instrinct",
+                                "name": "string"
+                              },
+                              "defaultValue": " className"
+                            },
+                            {
+                              "id": 14,
+                              "name": "offset",
+                              "kind": 32,
+                              "kindString": "Variable",
+                              "flags": {},
+                              "sources": [
+                                {
+                                  "fileName": "popover.ts",
+                                  "line": 49,
+                                  "character": 18
+                                }
+                              ],
+                              "type": {
+                                "type": "reference",
+                                "name": "JQueryCoordinates"
+                              },
+                              "defaultValue": " offset"
+                            }
+                          ],
+                          "groups": [
+                            {
+                              "title": "Variables",
+                              "kind": 32,
+                              "children": [
+                                13,
+                                14
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "popover.ts",
+                      "line": 31,
+                      "character": 21
+                    }
+                  ]
+                },
+                {
+                  "id": 15,
+                  "name": "hideError",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 16,
+                      "name": "hideError",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "隐藏"
+                      },
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "popover.ts",
+                      "line": 56,
+                      "character": 13
+                    }
+                  ]
+                },
+                {
+                  "id": 45,
+                  "name": "init",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 46,
+                      "name": "init",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.init"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 30,
+                      "character": 8
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.init"
+                  }
+                },
+                {
+                  "id": 49,
+                  "name": "mount",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 50,
+                      "name": "mount",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 51,
+                          "name": "parentEl",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "type": {
+                            "type": "reference",
+                            "name": "HTMLElement"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.mount"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 32,
+                      "character": 9
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.mount"
+                  }
+                },
+                {
+                  "id": 55,
+                  "name": "parentView",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 56,
+                      "name": "parentView",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "取调用自定组件的上级view"
+                      },
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.parentView"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 37,
+                      "character": 14
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.parentView"
+                  }
+                },
+                {
+                  "id": 68,
+                  "name": "regEvent",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 69,
+                      "name": "regEvent",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 70,
+                          "name": "eventName",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.regEvent"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 53,
+                      "character": 12
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.regEvent"
+                  }
+                },
+                {
+                  "id": 86,
+                  "name": "remove",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 87,
+                      "name": "remove",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "移除属性",
+                        "returns": "\n",
+                        "tags": [
+                          {
+                            "tag": "method",
+                            "text": "remove"
+                          }
+                        ]
+                      },
+                      "parameters": [
+                        {
+                          "id": 88,
+                          "name": "attr",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "comment": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 89,
+                          "name": "doneOrAsync",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "comment": {
+                            "text": "= null"
+                          },
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.remove"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 79,
+                      "character": 10
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.remove"
+                  }
+                },
+                {
+                  "id": 95,
+                  "name": "render",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 96,
+                      "name": "render",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 97,
+                          "name": "virtualDomDefine",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 98,
+                          "name": "scope",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "type": {
+                            "type": "reflection",
+                            "declaration": {
+                              "id": 99,
+                              "name": "__type",
+                              "kind": 65536,
+                              "kindString": "Type literal",
+                              "flags": {},
+                              "sources": [
+                                {
+                                  "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                                  "line": 89,
+                                  "character": 41
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "id": 100,
+                          "name": "doneOrAsync",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.render"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 89,
+                      "character": 10
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.render"
+                  }
+                },
+                {
+                  "id": 61,
+                  "name": "renderQueue",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 62,
+                      "name": "renderQueue",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "放入渲染队列"
+                      },
+                      "parameters": [
+                        {
+                          "id": 63,
+                          "name": "doneOrAsync",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "reference",
+                        "name": "HTMLElement"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.renderQueue"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 45,
+                      "character": 15
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.renderQueue"
+                  }
+                },
+                {
+                  "id": 76,
+                  "name": "set",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 77,
+                      "name": "set",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "更新 scope",
+                        "tags": [
+                          {
+                            "tag": "method",
+                            "text": "set"
+                          }
+                        ]
+                      },
+                      "parameters": [
+                        {
+                          "id": 78,
+                          "name": "attr",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "comment": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 79,
+                          "name": "value",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "comment": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 80,
+                          "name": "doneOrAsync",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "comment": {
+                            "text": "\n"
+                          },
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 81,
+                          "name": "isPromeisCallback",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "type": {
+                            "type": "instrinct",
+                            "name": "boolean"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.set"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 63,
+                      "character": 7
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.set"
+                  }
+                },
+                {
+                  "id": 17,
+                  "name": "showError",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 18,
+                      "name": "showError",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 19,
+                          "name": "errData",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "reference",
+                            "name": "ErrDataValue",
+                            "id": 2
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "popover.ts",
+                      "line": 61,
+                      "character": 13
+                    }
+                  ]
+                },
+                {
+                  "id": 71,
+                  "name": "unRegEvent",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 72,
+                      "name": "unRegEvent",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 73,
+                          "name": "eventName",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.unRegEvent"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 54,
+                      "character": 14
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.unRegEvent"
+                  }
+                },
+                {
+                  "id": 90,
+                  "name": "update",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 91,
+                      "name": "update",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "对外接口",
+                        "returns": "\n",
+                        "tags": [
+                          {
+                            "tag": "method",
+                            "text": "update"
+                          }
+                        ]
+                      },
+                      "parameters": [
+                        {
+                          "id": 92,
+                          "name": "attr",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "comment": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 93,
+                          "name": "value",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "comment": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 94,
+                          "name": "status",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "comment": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.update"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 88,
+                      "character": 10
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.update"
+                  }
+                },
+                {
+                  "id": 47,
+                  "name": "watch",
+                  "kind": 2048,
+                  "kindString": "Method",
+                  "flags": {
+                    "isExported": true
+                  },
+                  "signatures": [
+                    {
+                      "id": 48,
+                      "name": "watch",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "void"
+                      },
+                      "inheritedFrom": {
+                        "type": "reference",
+                        "name": "Component.watch"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "/Users/vfasky/git/mcore-ext/node_modules/mcore3/dist/tsd/src/component.d.ts",
+                      "line": 31,
+                      "character": 9
+                    }
+                  ],
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "name": "Component.watch"
+                  }
+                }
+              ],
+              "groups": [
+                {
+                  "title": "Modules",
+                  "kind": 2,
+                  "children": [
+                    101
+                  ]
+                },
+                {
+                  "title": "Constructors",
+                  "kind": 512,
+                  "children": [
+                    37
+                  ]
+                },
+                {
+                  "title": "Properties",
+                  "kind": 1024,
+                  "children": [
+                    31,
+                    8,
+                    32,
+                    30,
+                    23,
+                    9,
+                    29,
+                    7,
+                    20,
+                    36,
+                    35,
+                    34,
+                    25,
+                    22,
+                    24,
+                    27,
+                    6,
+                    33,
+                    26,
+                    28,
+                    21
+                  ]
+                },
+                {
+                  "title": "Methods",
+                  "kind": 2048,
+                  "children": [
+                    43,
+                    74,
+                    64,
+                    52,
+                    57,
+                    82,
+                    10,
+                    15,
+                    45,
+                    49,
+                    55,
+                    68,
+                    86,
+                    95,
+                    61,
+                    76,
+                    17,
+                    71,
+                    90,
+                    47
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "popover.ts",
+                  "line": 19,
+                  "character": 28
+                }
+              ],
+              "extendedTypes": [
+                {
+                  "type": "reference",
+                  "name": "Component"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "ErrDataValue",
+              "kind": 256,
+              "kindString": "Interface",
+              "flags": {},
+              "children": [
+                {
+                  "id": 3,
+                  "name": "$el",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "popover.ts",
+                      "line": 15,
+                      "character": 7
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "JQuery"
+                  }
+                },
+                {
+                  "id": 4,
+                  "name": "err",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "popover.ts",
+                      "line": 16,
+                      "character": 7
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  }
+                }
+              ],
+              "groups": [
+                {
+                  "title": "Properties",
+                  "kind": 1024,
+                  "children": [
+                    3,
+                    4
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "popover.ts",
+                  "line": 14,
+                  "character": 22
+                }
+              ]
+            },
+            {
+              "id": 103,
+              "name": "$DOC",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "popover.ts",
+                  "line": 12,
+                  "character": 10
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "JQuery"
+              },
+              "defaultValue": " $(document)"
+            }
+          ],
+          "groups": [
+            {
+              "title": "Classes",
+              "kind": 128,
+              "children": [
+                5
+              ]
+            },
+            {
+              "title": "Interfaces",
+              "kind": 256,
+              "children": [
+                2
+              ]
+            },
+            {
+              "title": "Variables",
+              "kind": 32,
+              "children": [
+                103
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "popover.ts",
+              "line": 1,
+              "character": 0
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "External modules",
+          "kind": 1,
+          "children": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  "util": {
+    "fileSoures": [
+      "/Users/vfasky/git/mcore-ext/util/cache.ts",
+      "/Users/vfasky/git/mcore-ext/util/storage.ts"
+    ],
+    "index": null,
+    "doc": {
+      "id": 104,
+      "name": "mcore-ext",
+      "kind": 0,
+      "flags": {},
+      "children": [
+        {
+          "id": 130,
+          "name": "cache\"",
+          "kind": 1,
+          "kindString": "External module",
+          "flags": {
+            "isExported": true
+          },
+          "originalName": "/Users/vfasky/git/mcore-ext/util/cache.ts",
+          "children": [
+            {
+              "id": 131,
+              "name": "CACHE_PRE",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "cache.ts",
+                  "line": 10,
+                  "character": 15
+                }
+              ],
+              "type": {
+                "type": "instrinct",
+                "name": "string"
+              },
+              "defaultValue": "\"__mc_cache_\""
+            },
+            {
+              "id": 132,
+              "name": "MAX_TIME",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "cache.ts",
+                  "line": 11,
+                  "character": 14
+                }
+              ],
+              "type": {
+                "type": "instrinct",
+                "name": "number"
+              },
+              "defaultValue": " 3600 * 24 * 1000 * 1000"
+            },
+            {
+              "id": 138,
+              "name": "get",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 139,
+                  "name": "get",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "取缓存"
+                  },
+                  "parameters": [
+                    {
+                      "id": 140,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "text": "索引"
+                      },
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 141,
+                      "name": "defaultVal",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "text": "没有数据时，返回的默认值\n"
+                      },
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      },
+                      "defaultValue": " null"
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "cache.ts",
+                  "line": 40,
+                  "character": 19
+                }
+              ]
+            },
+            {
+              "id": 142,
+              "name": "remove",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 143,
+                  "name": "remove",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "删除缓存"
+                  },
+                  "parameters": [
+                    {
+                      "id": 144,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "text": "索引\n"
+                      },
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "boolean"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "cache.ts",
+                  "line": 62,
+                  "character": 22
+                }
+              ]
+            },
+            {
+              "id": 133,
+              "name": "set",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 134,
+                  "name": "set",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "设置缓存",
+                    "tags": [
+                      {
+                        "tag": "example",
+                        "text": "\n```js\nimport cache from 'mcore-ext/util/cache'\ncache.set('test', 0)\n```\n"
+                      }
+                    ]
+                  },
+                  "parameters": [
+                    {
+                      "id": 135,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "text": "索引"
+                      },
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 136,
+                      "name": "value",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "text": "值"
+                      },
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      }
+                    },
+                    {
+                      "id": 137,
+                      "name": "time",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "text": "缓存多少毫秒"
+                      },
+                      "type": {
+                        "type": "instrinct",
+                        "name": "number"
+                      },
+                      "defaultValue": " MAX_TIME"
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "cache.ts",
+                  "line": 24,
+                  "character": 19
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "title": "Variables",
+              "kind": 32,
+              "children": [
+                131,
+                132
+              ]
+            },
+            {
+              "title": "Functions",
+              "kind": 64,
+              "children": [
+                138,
+                142,
+                133
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "cache.ts",
+              "line": 1,
+              "character": 0
+            }
+          ]
+        },
+        {
+          "id": 105,
+          "name": "storage\"",
+          "kind": 1,
+          "kindString": "External module",
+          "flags": {
+            "isExported": true
+          },
+          "originalName": "/Users/vfasky/git/mcore-ext/util/storage.ts",
+          "children": [
+            {
+              "id": 119,
+              "name": "get",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 120,
+                  "name": "get",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "取数据"
+                  },
+                  "parameters": [
+                    {
+                      "id": 121,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 122,
+                      "name": "defaultVal",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      },
+                      "defaultValue": " null"
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "storage.ts",
+                  "line": 22,
+                  "character": 19
+                }
+              ]
+            },
+            {
+              "id": 127,
+              "name": "remove",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 128,
+                  "name": "remove",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "删数据"
+                  },
+                  "parameters": [
+                    {
+                      "id": 129,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "boolean"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "storage.ts",
+                  "line": 47,
+                  "character": 22
+                }
+              ]
+            },
+            {
+              "id": 123,
+              "name": "set",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 124,
+                  "name": "set",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "写数据"
+                  },
+                  "parameters": [
+                    {
+                      "id": 125,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 126,
+                      "name": "val",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "storage.ts",
+                  "line": 40,
+                  "character": 19
+                }
+              ]
+            },
+            {
+              "id": 106,
+              "name": "storage",
+              "kind": 2097152,
+              "kindString": "Object literal",
+              "flags": {},
+              "children": [
+                {
+                  "id": 107,
+                  "name": "data",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "storage.ts",
+                      "line": 9,
+                      "character": 8
+                    }
+                  ],
+                  "type": {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 108,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {}
+                    }
+                  }
+                },
+                {
+                  "id": 109,
+                  "name": "getItem",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 110,
+                      "name": "getItem",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 111,
+                          "name": "key",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "storage.ts",
+                      "line": 10,
+                      "character": 11
+                    }
+                  ]
+                },
+                {
+                  "id": 116,
+                  "name": "removeItem",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 117,
+                      "name": "removeItem",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 118,
+                          "name": "key",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "storage.ts",
+                      "line": 12,
+                      "character": 14
+                    }
+                  ]
+                },
+                {
+                  "id": 112,
+                  "name": "setItem",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 113,
+                      "name": "setItem",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 114,
+                          "name": "key",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          }
+                        },
+                        {
+                          "id": 115,
+                          "name": "val",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "storage.ts",
+                      "line": 11,
+                      "character": 11
+                    }
+                  ]
+                }
+              ],
+              "groups": [
+                {
+                  "title": "Variables",
+                  "kind": 32,
+                  "children": [
+                    107
+                  ]
+                },
+                {
+                  "title": "Functions",
+                  "kind": 64,
+                  "children": [
+                    109,
+                    116,
+                    112
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "storage.ts",
+                  "line": 8,
+                  "character": 11
+                }
+              ],
+              "type": {
+                "type": "instrinct",
+                "name": "object"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "title": "Functions",
+              "kind": 64,
+              "children": [
+                119,
+                127,
+                123
+              ]
+            },
+            {
+              "title": "Object literals",
+              "kind": 2097152,
+              "children": [
+                106
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "storage.ts",
+              "line": 1,
+              "character": 0
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "External modules",
+          "kind": 1,
+          "children": [
+            130,
+            105
+          ]
+        }
+      ]
+    }
+  },
+  "formatters": {
+    "fileSoures": [
+      "/Users/vfasky/git/mcore-ext/formatters/i18n.ts"
+    ],
+    "index": null,
+    "doc": {
+      "id": 145,
+      "name": "mcore-ext",
+      "kind": 0,
+      "flags": {},
+      "children": [
+        {
+          "id": 146,
+          "name": "i18n\"",
+          "kind": 1,
+          "kindString": "External module",
+          "flags": {
+            "isExported": true
+          },
+          "originalName": "/Users/vfasky/git/mcore-ext/formatters/i18n.ts",
+          "children": [
+            {
+              "id": 152,
+              "name": "_local",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "comment": {
+                "shortText": "默认语言包"
+              },
+              "sources": [
+                {
+                  "fileName": "i18n.ts",
+                  "line": 23,
+                  "character": 10
+                }
+              ],
+              "type": {
+                "type": "instrinct",
+                "name": "string"
+              },
+              "defaultValue": "\"zh-CN\""
+            },
+            {
+              "id": 174,
+              "name": "register",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {
+                "isExported": true
+              },
+              "comment": {
+                "tags": [
+                  {
+                    "tag": "example",
+                    "text": "\n```html\n{'hello %s' | _ 'mcore'}\n<input mc-placeholder=\"'hello %s' | _ 'mcore'\">\n```\n"
+                  }
+                ]
+              },
+              "sources": [
+                {
+                  "fileName": "i18n.ts",
+                  "line": 92,
+                  "character": 19
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "i18n",
+                "id": 159
+              },
+              "defaultValue": " Template.formatters['i18n'] = Template.formatters['_'] = i18n"
+            },
+            {
+              "id": 153,
+              "name": "_noMatchCallback",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {},
+              "comment": {
+                "shortText": "没有查到字典时，执行"
+              },
+              "signatures": [
+                {
+                  "id": 154,
+                  "name": "_noMatchCallback",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "没有查到字典时，执行"
+                  },
+                  "parameters": [
+                    {
+                      "id": 155,
+                      "name": "str",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 156,
+                      "name": "local",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "void"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "i18n.ts",
+                  "line": 28,
+                  "character": 20
+                }
+              ]
+            },
+            {
+              "id": 157,
+              "name": "getDict",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {},
+              "signatures": [
+                {
+                  "id": 158,
+                  "name": "getDict",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "i18n.ts",
+                  "line": 30,
+                  "character": 16
+                }
+              ]
+            },
+            {
+              "id": 168,
+              "name": "getLocal",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 169,
+                  "name": "getLocal",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "i18n.ts",
+                  "line": 77,
+                  "character": 24
+                }
+              ]
+            },
+            {
+              "id": 159,
+              "name": "i18n",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 160,
+                  "name": "i18n",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 161,
+                      "name": "args",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isRest": true
+                      },
+                      "type": {
+                        "type": "reference",
+                        "name": "Array",
+                        "typeArguments": [
+                          {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "i18n.ts",
+                  "line": 34,
+                  "character": 28
+                }
+              ]
+            },
+            {
+              "id": 170,
+              "name": "loadDict",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 171,
+                  "name": "loadDict",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 172,
+                      "name": "name",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 173,
+                      "name": "dict",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "void"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "i18n.ts",
+                  "line": 81,
+                  "character": 24
+                }
+              ]
+            },
+            {
+              "id": 165,
+              "name": "setLocal",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 166,
+                  "name": "setLocal",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 167,
+                      "name": "name",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "void"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "i18n.ts",
+                  "line": 73,
+                  "character": 24
+                }
+              ]
+            },
+            {
+              "id": 162,
+              "name": "setNotMatchCalllback",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 163,
+                  "name": "setNotMatchCalllback",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 164,
+                      "name": "callback",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "void"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "i18n.ts",
+                  "line": 69,
+                  "character": 36
+                }
+              ]
+            },
+            {
+              "id": 147,
+              "name": "_dict",
+              "kind": 2097152,
+              "kindString": "Object literal",
+              "flags": {},
+              "comment": {
+                "shortText": "存放语言包翻译字典"
+              },
+              "children": [
+                {
+                  "id": 150,
+                  "name": "en",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "i18n.ts",
+                      "line": 17,
+                      "character": 8
+                    }
+                  ],
+                  "type": {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 151,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {}
+                    }
+                  }
+                },
+                {
+                  "id": 148,
+                  "name": "zh-CN",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "i18n.ts",
+                      "line": 16,
+                      "character": 11
+                    }
+                  ],
+                  "type": {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 149,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {}
+                    }
+                  }
+                }
+              ],
+              "groups": [
+                {
+                  "title": "Variables",
+                  "kind": 32,
+                  "children": [
+                    150,
+                    148
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "i18n.ts",
+                  "line": 15,
+                  "character": 9
+                }
+              ],
+              "type": {
+                "type": "instrinct",
+                "name": "object"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "title": "Variables",
+              "kind": 32,
+              "children": [
+                152,
+                174
+              ]
+            },
+            {
+              "title": "Functions",
+              "kind": 64,
+              "children": [
+                153,
+                157,
+                168,
+                159,
+                170,
+                165,
+                162
+              ]
+            },
+            {
+              "title": "Object literals",
+              "kind": 2097152,
+              "children": [
+                147
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "i18n.ts",
+              "line": 1,
+              "character": 0
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "External modules",
+          "kind": 1,
+          "children": [
+            146
+          ]
+        }
+      ]
+    }
+  },
+  "binder/validator": {
+    "fileSoures": [
+      "/Users/vfasky/git/mcore-ext/binder/validator/index.ts"
+    ],
+    "index": "/Users/vfasky/git/mcore-ext/binder/validator/index.ts",
+    "doc": {
+      "id": 175,
+      "name": "mcore-ext",
+      "kind": 0,
+      "flags": {},
+      "children": [
+        {
+          "id": 176,
+          "name": "validator",
+          "kind": 1,
+          "kindString": "External module",
+          "flags": {
+            "isExported": true
+          },
+          "originalName": "/Users/vfasky/git/mcore-ext/binder/validator/index.ts",
+          "children": [
+            {
+              "id": 177,
+              "name": "_isAlphabetReg",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 20,
+                  "character": 20
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "RegExp"
+              },
+              "defaultValue": " /^[A-Za-z]+$/"
+            },
+            {
+              "id": 178,
+              "name": "_isChrStr",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 23,
+                  "character": 15
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "RegExp"
+              },
+              "defaultValue": " /[^x00-xff]/"
+            },
+            {
+              "id": 180,
+              "name": "_isDateReg",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 29,
+                  "character": 16
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "RegExp"
+              },
+              "defaultValue": " /^([1-2]\\d{3})([-/.])?(1[0-2]|0?[1-9])([-/.])?([1-2]\\d|3[01]|0?[1-9])$/"
+            },
+            {
+              "id": 182,
+              "name": "_isDigitOrAlphaReg",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 35,
+                  "character": 24
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "RegExp"
+              },
+              "defaultValue": " /^(\\d|\\w)+$/"
+            },
+            {
+              "id": 179,
+              "name": "_isEmailReg",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 26,
+                  "character": 17
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "RegExp"
+              },
+              "defaultValue": " /^(?:[a-z0-9]+[_\\-+.]+)*[a-z0-9]+@(?:([a-z0-9]+-?)*[a-z0-9]+.)+([a-z]{2,})+$/i"
+            },
+            {
+              "id": 181,
+              "name": "_isMobileReg",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 32,
+                  "character": 18
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "RegExp"
+              },
+              "defaultValue": " /^1[3-9]\\d{9}$/"
+            },
+            {
+              "id": 183,
+              "name": "_isTelReg",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "comment": {
+                "shortText": "检查座机\n座机：仅中国座机支持；区号可有 3、4位数并且以 0 开头；电话号不以 0 开头，最 8 位数，最少 7 位数\n但 400/800 除头开外，适应电话，电话本身是 7 位数\n0755-29819991 | 0755 29819991 | 400-6927972 | 4006927927 | 800..."
+              },
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 43,
+                  "character": 15
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "RegExp"
+              },
+              "defaultValue": " /^(?:(?:0\\d{2,3}[- ]?[1-9]\\d{6,7})|(?:[48]00[- ]?[1-9]\\d{6}))$/"
+            },
+            {
+              "id": 184,
+              "name": "_urlCheck",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 46,
+                  "character": 15
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "(Anonymous function)"
+              },
+              "defaultValue": " (function () {\n    let protocols = '((https?|s?ftp|irc[6s]?|git|afp|telnet|smb):\\\\/\\\\/)?'\n    let userInfo = '([a-z0-9]\\\\w*(\\\\:[\\\\S]+)?\\\\@)?'\n    let domain = '(?:localhost|(?:[a-z0-9]+(?:[-\\\\w]*[a-z0-9])?(?:\\\\.[a-z0-9][-\\\\w]*[a-z0-9])*)*\\\\.[a-z]{2,})'\n    let port = '(:\\\\d{1,5})?'\n    let ip = '\\\\d{1,3}\\\\.\\\\d{1,3}\\\\.\\\\d{1,3}\\\\.\\\\d{1,3}'\n    let address = '(\\\\/\\\\S*)?'\n    let domainType = [protocols, userInfo, domain, port, address]\n    let ipType = [protocols, userInfo, ip, port, address]\n    let rDomain = new RegExp('^' + domainType.join('') + '$', 'i')\n    let rIP = new RegExp('^' + ipType.join('') + '$', 'i')\n\n    return function (x) {\n        return rDomain.test(x) || rIP.test(x)\n    }\n})()"
+            },
+            {
+              "id": 293,
+              "name": "register",
+              "kind": 32,
+              "kindString": "Variable",
+              "flags": {
+                "isExported": true
+              },
+              "comment": {
+                "shortText": "表单验证",
+                "tags": [
+                  {
+                    "tag": "example",
+                    "text": "\n```html\n<form mc-validator=\"save\"></form>\n```\n"
+                  }
+                ]
+              },
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 269,
+                  "character": 19
+                }
+              ],
+              "type": {
+                "type": "reflection",
+                "declaration": {
+                  "id": 294,
+                  "name": "__type",
+                  "kind": 65536,
+                  "kindString": "Type literal",
+                  "flags": {},
+                  "children": [
+                    {
+                      "id": 299,
+                      "name": "init",
+                      "kind": 64,
+                      "kindString": "Function",
+                      "flags": {},
+                      "signatures": [
+                        {
+                          "id": 300,
+                          "name": "init",
+                          "kind": 4096,
+                          "kindString": "Call signature",
+                          "flags": {},
+                          "parameters": [
+                            {
+                              "id": 301,
+                              "name": "el",
+                              "kind": 32768,
+                              "kindString": "Parameter",
+                              "flags": {},
+                              "type": {
+                                "type": "instrinct",
+                                "name": "any"
+                              }
+                            },
+                            {
+                              "id": 302,
+                              "name": "value",
+                              "kind": 32768,
+                              "kindString": "Parameter",
+                              "flags": {},
+                              "type": {
+                                "type": "instrinct",
+                                "name": "any"
+                              }
+                            }
+                          ],
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "sources": [
+                        {
+                          "fileName": "index.ts",
+                          "line": 279,
+                          "character": 8
+                        }
+                      ]
+                    },
+                    {
+                      "id": 295,
+                      "name": "update",
+                      "kind": 64,
+                      "kindString": "Function",
+                      "flags": {},
+                      "signatures": [
+                        {
+                          "id": 296,
+                          "name": "update",
+                          "kind": 4096,
+                          "kindString": "Call signature",
+                          "flags": {},
+                          "parameters": [
+                            {
+                              "id": 297,
+                              "name": "el",
+                              "kind": 32768,
+                              "kindString": "Parameter",
+                              "flags": {},
+                              "type": {
+                                "type": "reference",
+                                "name": "HTMLElement"
+                              }
+                            },
+                            {
+                              "id": 298,
+                              "name": "value",
+                              "kind": 32768,
+                              "kindString": "Parameter",
+                              "flags": {},
+                              "type": {
+                                "type": "instrinct",
+                                "name": "any"
+                              }
+                            }
+                          ],
+                          "type": {
+                            "type": "instrinct",
+                            "name": "void"
+                          }
+                        }
+                      ],
+                      "sources": [
+                        {
+                          "fileName": "index.ts",
+                          "line": 270,
+                          "character": 10
+                        }
+                      ]
+                    }
+                  ],
+                  "groups": [
+                    {
+                      "title": "Functions",
+                      "kind": 64,
+                      "children": [
+                        299,
+                        295
+                      ]
+                    }
+                  ]
+                }
+              },
+              "defaultValue": " Template.binders['validator'] = Template.binders['validated'] = {\n    update: function (el: HTMLElement, value){\n        if (el.tagName.toLowerCase() == 'form') {\n            el.setAttribute('novalidate', 'novalidate')\n            return\n        }\n\n        el.setAttribute('validator', value)\n    },\n\n    init: function (el, value) {\n        if (el.tagName.toLowerCase() != 'form' || !el._element) {\n            return el.setAttribute('validator', value)\n        }\n\n        let callback = Template.strToFun(el, value) || function(){}\n        let proxyEnv = Template.getEnv(el)\n        let $form = $(el)\n        // 禁用 html5 验证\n        el.setAttribute('novalidate', 'novalidate')\n\n        function validatorForm (callback = function(err, data){}) {\n            let rules = getRules($form)\n            let data = (<any>$form).serializeObject()\n            let err = null\n\n            $.each(rules, (k, v)=>{\n                let $el = v.args[0]\n                let _value = getNameValue(data, v.name, $el)\n\n                if (v.type != 'required' && (_value == '' || _value == undefined)) return\n\n                let value = {\n                    toString: () => String(_value) ,\n                    toNumber: () => Number(_value) ,\n                    $el: $el,\n                    $form: $form\n                }\n\n                v.args[0] = value\n\n                let checkRes = v.rule.apply(null, v.args)\n\n                if (false === checkRes){\n                    err = {\n                        $el: $el,\n                        err: v.err,\n                        $form: $form\n                    }\n                    return false\n                }\n\n                if (checkRes.type && checkRes.type === 'formatter') {\n                    $el.val(checkRes.val)\n                    data[v.name] = checkRes.val\n                }\n            })\n\n            return callback(err, data)\n        }\n\n        // 注入上下文\n        if (proxyEnv && !proxyEnv[value + 'Check']) {\n            proxyEnv[value + 'Check'] = function(){\n                return new Promise((resolve, reject) => {\n                    validatorForm((err, data)=>{\n                        if(err) return reject(err)\n                        resolve(data)\n                    })\n                })\n            }\n        }\n\n        $form.off('submit.mc-binder-validator').on('submit.mc-binder-validator', () => {\n            try {\n                validatorForm(callback)\n            } catch (err) {\n                console.error(err.stack)\n            }\n\n            return false\n        })\n    }\n}"
+            },
+            {
+              "id": 303,
+              "name": "add",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 304,
+                  "name": "add",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 305,
+                      "name": "x",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 306,
+                      "name": "fun",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      }
+                    },
+                    {
+                      "id": 307,
+                      "name": "errMsg",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      },
+                      "defaultValue": "\"\""
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "void"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 356,
+                  "character": 19
+                }
+              ]
+            },
+            {
+              "id": 308,
+              "name": "addErrMsg",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 309,
+                  "name": "addErrMsg",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 310,
+                      "name": "type",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 311,
+                      "name": "msg",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "void"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 361,
+                  "character": 25
+                }
+              ]
+            },
+            {
+              "id": 312,
+              "name": "check",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 313,
+                  "name": "check",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 314,
+                      "name": "args",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isRest": true
+                      },
+                      "type": {
+                        "type": "reference",
+                        "name": "Array",
+                        "typeArguments": [
+                          {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 365,
+                  "character": 21
+                }
+              ]
+            },
+            {
+              "id": 288,
+              "name": "getNameValue",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {},
+              "signatures": [
+                {
+                  "id": 289,
+                  "name": "getNameValue",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 290,
+                      "name": "data",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "any"
+                      }
+                    },
+                    {
+                      "id": 291,
+                      "name": "name",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 292,
+                      "name": "$el",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "reference",
+                        "name": "JQuery"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 254,
+                  "character": 21
+                }
+              ]
+            },
+            {
+              "id": 285,
+              "name": "getRules",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {},
+              "signatures": [
+                {
+                  "id": 286,
+                  "name": "getRules",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 287,
+                      "name": "$form",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "reference",
+                        "name": "JQuery"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "name": "Array",
+                    "typeArguments": [
+                      {
+                        "type": "instrinct",
+                        "name": "any"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 243,
+                  "character": 17
+                }
+              ]
+            },
+            {
+              "id": 280,
+              "name": "parseValidator",
+              "kind": 64,
+              "kindString": "Function",
+              "flags": {},
+              "signatures": [
+                {
+                  "id": 281,
+                  "name": "parseValidator",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 282,
+                      "name": "$el",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "reference",
+                        "name": "JQuery"
+                      }
+                    },
+                    {
+                      "id": 283,
+                      "name": "rules",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "reference",
+                        "name": "Array",
+                        "typeArguments": [
+                          {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        ]
+                      },
+                      "defaultValue": " []"
+                    },
+                    {
+                      "id": 284,
+                      "name": "$form",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "reference",
+                        "name": "JQuery"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "void"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 186,
+                  "character": 23
+                }
+              ]
+            },
+            {
+              "id": 251,
+              "name": "_errMsg",
+              "kind": 2097152,
+              "kindString": "Object literal",
+              "flags": {},
+              "children": [
+                {
+                  "id": 274,
+                  "name": "equals",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 177,
+                      "character": 10
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  },
+                  "defaultValue": "\"两次输入的值不相符\""
+                },
+                {
+                  "id": 254,
+                  "name": "isAlphabet",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 169,
+                      "character": 14
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  },
+                  "defaultValue": "\"只能是字母\""
+                },
+                {
+                  "id": 277,
+                  "name": "isDate",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 180,
+                      "character": 10
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  },
+                  "defaultValue": "\"日期格式不正确\""
+                },
+                {
+                  "id": 275,
+                  "name": "isEmail",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 178,
+                      "character": 11
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  },
+                  "defaultValue": "\"邮箱格式不正确\""
+                },
+                {
+                  "id": 276,
+                  "name": "isInteger",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 179,
+                      "character": 13
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  },
+                  "defaultValue": "\"数值必须是整数\""
+                },
+                {
+                  "id": 278,
+                  "name": "isMobile",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 181,
+                      "character": 12
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  },
+                  "defaultValue": "\"手机格式不正确\""
+                },
+                {
+                  "id": 253,
+                  "name": "isNumber",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 168,
+                      "character": 12
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  },
+                  "defaultValue": "\"只能是数字\""
+                },
+                {
+                  "id": 279,
+                  "name": "isTel",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 182,
+                      "character": 9
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  },
+                  "defaultValue": "\"座机格式不正确\""
+                },
+                {
+                  "id": 255,
+                  "name": "onlyDigitAndAlpha",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 170,
+                      "character": 21
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  },
+                  "defaultValue": "\"只能是字母和数字\""
+                },
+                {
+                  "id": 252,
+                  "name": "required",
+                  "kind": 32,
+                  "kindString": "Variable",
+                  "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 167,
+                      "character": 12
+                    }
+                  ],
+                  "type": {
+                    "type": "instrinct",
+                    "name": "string"
+                  },
+                  "defaultValue": "\"不能为空\""
+                },
+                {
+                  "id": 271,
+                  "name": "max",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 272,
+                      "name": "max",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 273,
+                          "name": "max",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 176,
+                      "character": 7
+                    }
+                  ]
+                },
+                {
+                  "id": 262,
+                  "name": "maxChrLen",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 263,
+                      "name": "maxChrLen",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 264,
+                          "name": "len",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 173,
+                      "character": 13
+                    }
+                  ]
+                },
+                {
+                  "id": 265,
+                  "name": "maxlength",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 266,
+                      "name": "maxlength",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 267,
+                          "name": "len",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 174,
+                      "character": 13
+                    }
+                  ]
+                },
+                {
+                  "id": 268,
+                  "name": "min",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 269,
+                      "name": "min",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 270,
+                          "name": "min",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 175,
+                      "character": 7
+                    }
+                  ]
+                },
+                {
+                  "id": 259,
+                  "name": "minChrLen",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 260,
+                      "name": "minChrLen",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 261,
+                          "name": "len",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 172,
+                      "character": 13
+                    }
+                  ]
+                },
+                {
+                  "id": 256,
+                  "name": "minlength",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 257,
+                      "name": "minlength",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 258,
+                          "name": "len",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 171,
+                      "character": 13
+                    }
+                  ]
+                }
+              ],
+              "groups": [
+                {
+                  "title": "Variables",
+                  "kind": 32,
+                  "children": [
+                    274,
+                    254,
+                    277,
+                    275,
+                    276,
+                    278,
+                    253,
+                    279,
+                    255,
+                    252
+                  ]
+                },
+                {
+                  "title": "Functions",
+                  "kind": 64,
+                  "children": [
+                    271,
+                    262,
+                    265,
+                    268,
+                    259,
+                    256
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 166,
+                  "character": 11
+                }
+              ],
+              "type": {
+                "type": "instrinct",
+                "name": "object"
+              }
+            },
+            {
+              "id": 185,
+              "name": "_rule",
+              "kind": 2097152,
+              "kindString": "Object literal",
+              "flags": {},
+              "children": [
+                {
+                  "id": 232,
+                  "name": "equals",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 233,
+                      "name": "equals",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 234,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 235,
+                          "name": "value",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 138,
+                      "character": 10
+                    }
+                  ]
+                },
+                {
+                  "id": 196,
+                  "name": "isAlphabet",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 197,
+                      "name": "isAlphabet",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 198,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          },
+                          "defaultValue": "\"\""
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 81,
+                      "character": 14
+                    }
+                  ]
+                },
+                {
+                  "id": 239,
+                  "name": "isDate",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 240,
+                      "name": "isDate",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 241,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 146,
+                      "character": 10
+                    }
+                  ]
+                },
+                {
+                  "id": 236,
+                  "name": "isEmail",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 237,
+                      "name": "isEmail",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 238,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 144,
+                      "character": 11
+                    }
+                  ]
+                },
+                {
+                  "id": 221,
+                  "name": "isInteger",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 222,
+                      "name": "isInteger",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 223,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 132,
+                      "character": 13
+                    }
+                  ]
+                },
+                {
+                  "id": 242,
+                  "name": "isMobile",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 243,
+                      "name": "isMobile",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 244,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 159,
+                      "character": 12
+                    }
+                  ]
+                },
+                {
+                  "id": 218,
+                  "name": "isNumber",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 219,
+                      "name": "isNumber",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 220,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 130,
+                      "character": 12
+                    }
+                  ]
+                },
+                {
+                  "id": 245,
+                  "name": "isTel",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 246,
+                      "name": "isTel",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 247,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 161,
+                      "character": 9
+                    }
+                  ]
+                },
+                {
+                  "id": 248,
+                  "name": "isUrl",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 249,
+                      "name": "isUrl",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 250,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 163,
+                      "character": 9
+                    }
+                  ]
+                },
+                {
+                  "id": 228,
+                  "name": "max",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 229,
+                      "name": "max",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 230,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "number"
+                          }
+                        },
+                        {
+                          "id": 231,
+                          "name": "max",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "number"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 136,
+                      "character": 7
+                    }
+                  ]
+                },
+                {
+                  "id": 210,
+                  "name": "maxChrLen",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 211,
+                      "name": "maxChrLen",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 212,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          }
+                        },
+                        {
+                          "id": 213,
+                          "name": "len",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "number"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 99,
+                      "character": 13
+                    }
+                  ]
+                },
+                {
+                  "id": 206,
+                  "name": "maxlength",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 207,
+                      "name": "maxlength",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 208,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          }
+                        },
+                        {
+                          "id": 209,
+                          "name": "len",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "number"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 93,
+                      "character": 13
+                    }
+                  ]
+                },
+                {
+                  "id": 224,
+                  "name": "min",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 225,
+                      "name": "min",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 226,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "number"
+                          }
+                        },
+                        {
+                          "id": 227,
+                          "name": "min",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "number"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 134,
+                      "character": 7
+                    }
+                  ]
+                },
+                {
+                  "id": 214,
+                  "name": "minChrLen",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 215,
+                      "name": "minChrLen",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 216,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          }
+                        },
+                        {
+                          "id": 217,
+                          "name": "len",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "number"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 114,
+                      "character": 13
+                    }
+                  ]
+                },
+                {
+                  "id": 202,
+                  "name": "minlength",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 203,
+                      "name": "minlength",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 204,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          }
+                        },
+                        {
+                          "id": 205,
+                          "name": "len",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "number"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 87,
+                      "character": 13
+                    }
+                  ]
+                },
+                {
+                  "id": 199,
+                  "name": "onlyDigitAndAlpha",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 200,
+                      "name": "onlyDigitAndAlpha",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 201,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          },
+                          "defaultValue": "\"\""
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 84,
+                      "character": 21
+                    }
+                  ]
+                },
+                {
+                  "id": 186,
+                  "name": "required",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 187,
+                      "name": "required",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 188,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          },
+                          "defaultValue": "\"\""
+                        },
+                        {
+                          "id": 189,
+                          "name": "rule",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "any"
+                          },
+                          "defaultValue": " null"
+                        }
+                      ],
+                      "type": {
+                        "type": "instrinct",
+                        "name": "boolean"
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 65,
+                      "character": 12
+                    }
+                  ]
+                },
+                {
+                  "id": 190,
+                  "name": "trim",
+                  "kind": 64,
+                  "kindString": "Function",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 191,
+                      "name": "trim",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 192,
+                          "name": "x",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "instrinct",
+                            "name": "string"
+                          },
+                          "defaultValue": "\"\""
+                        }
+                      ],
+                      "type": {
+                        "type": "reflection",
+                        "declaration": {
+                          "id": 193,
+                          "name": "__type",
+                          "kind": 65536,
+                          "kindString": "Type literal",
+                          "flags": {},
+                          "children": [
+                            {
+                              "id": 194,
+                              "name": "type",
+                              "kind": 32,
+                              "kindString": "Variable",
+                              "flags": {},
+                              "sources": [
+                                {
+                                  "fileName": "index.ts",
+                                  "line": 76,
+                                  "character": 16
+                                }
+                              ],
+                              "type": {
+                                "type": "instrinct",
+                                "name": "string"
+                              },
+                              "defaultValue": "\"formatter\""
+                            },
+                            {
+                              "id": 195,
+                              "name": "val",
+                              "kind": 32,
+                              "kindString": "Variable",
+                              "flags": {},
+                              "sources": [
+                                {
+                                  "fileName": "index.ts",
+                                  "line": 77,
+                                  "character": 15
+                                }
+                              ],
+                              "type": {
+                                "type": "instrinct",
+                                "name": "string"
+                              },
+                              "defaultValue": " String(x).trim()"
+                            }
+                          ],
+                          "groups": [
+                            {
+                              "title": "Variables",
+                              "kind": 32,
+                              "children": [
+                                194,
+                                195
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "sources": [
+                    {
+                      "fileName": "index.ts",
+                      "line": 74,
+                      "character": 8
+                    }
+                  ]
+                }
+              ],
+              "groups": [
+                {
+                  "title": "Functions",
+                  "kind": 64,
+                  "children": [
+                    232,
+                    196,
+                    239,
+                    236,
+                    221,
+                    242,
+                    218,
+                    245,
+                    248,
+                    228,
+                    210,
+                    206,
+                    224,
+                    214,
+                    202,
+                    199,
+                    186,
+                    190
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "index.ts",
+                  "line": 63,
+                  "character": 9
+                }
+              ],
+              "type": {
+                "type": "instrinct",
+                "name": "object"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "title": "Variables",
+              "kind": 32,
+              "children": [
+                177,
+                178,
+                180,
+                182,
+                179,
+                181,
+                183,
+                184,
+                293
+              ]
+            },
+            {
+              "title": "Functions",
+              "kind": 64,
+              "children": [
+                303,
+                308,
+                312,
+                288,
+                285,
+                280
+              ]
+            },
+            {
+              "title": "Object literals",
+              "kind": 2097152,
+              "children": [
+                251,
+                185
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "index.ts",
+              "line": 1,
+              "character": 0
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "External modules",
+          "kind": 1,
+          "children": [
+            176
+          ]
+        }
+      ]
+    }
+  }
+}

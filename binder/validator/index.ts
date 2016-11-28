@@ -1,5 +1,4 @@
-/// <reference path="../../node_modules/typescript/lib/lib.es6.d.ts" />
-
+///<reference path="../../node_modules/typescript/lib/lib.es6.d.ts"/> 
 /**
  * binder validator
  * @author vfasky<vfasky@gmail.com>
@@ -260,6 +259,58 @@ function getNameValue (data, name: string, $el: JQuery) {
     return $el.val().trim()
 }
 
+/**
+ * 表单验证
+ * @example
+ * ```html
+ * <form mc-validator="save">
+ *      <input type="text" name="user-name" validator="trim | required" />
+ *      <input type="password" name="password" validator="trim | required" />
+ *      <input type="password" name="re-password" validator="trim | required | equals [name=password]" />
+ *      <button type="submit">Save</button>
+ * </form>
+ * ```
+ * > **注意** 有 `name` 属性的元素才会验证
+ * 
+ * ```ts
+ * import 'mcore-ext/binder/validator'
+ * 
+ * // view.ts
+ * export default class Read extends View {
+ *      static get viewName () {
+ *          return 'test'
+ *      }
+ *      
+ *      // errInfo 错误信息，如果没有错误，为 null
+ *      // data 验证成功后，表单的数据
+ *      save(errInfo, data: any) {
+ *      }
+ * }
+ * ```
+ * ##### 验证规则
+ * |   　　名称     |     描述      |　　　参数      |
+ * |---------------|---------------|---------------|　
+ * | trim         | 去两边空白      | 无            |
+ * | required     | 必填           | 无            |
+ * | isEmail      | 是否邮箱           | 无            |
+ * | isUrl        | 是否连接           | 无            |
+ * | isDate       | 验证日期 20120409 , 2012-04-09 , 2012/04/09 , 2012.04.09        | 无            |
+ * | isAlphabet   | 是否字母           | 无            |
+ * | isChrStr    | 是否中文           | 无            |
+ * | isMobile    | 是否手机           | 无            |
+ * | isNumber    | 是否数字           | 无            |
+ * | isInteger    | 是否整数           | 无            |
+ * | isTel        | 是否座机           | 无            |
+ * | onlyDigitAndAlpha   | 只能数字和字母           | 无            |
+ * | equals     | 两次输入的值不相符, 通常用于 `重复密码`   | cssSelect {string}  要与之相等的元素，在当前 form 中查找  |
+ * | min        | 数值要小于等于${value}        | value {number}            |
+ * | max        | 数值要大于等于${value}        | value {number}            |
+ * | maxLength  | 最多 ${len} 位字符           | len {number}            |
+ * | minLength  | 最小 ${len} 位字符           | len {number}            |
+ * | minChrLen  | 最小 ${len} 个中文 或  ${len * 2} 个英文 | len {number}            |
+ * | maxChrLen  | 最多 ${len} 个中文 或  ${len * 2} 个英文 | len {number}            |
+ * 
+ */
 export let register = Template.binders['validator'] = Template.binders['validated'] = {
     update: function (el: HTMLElement, value){
         if (el.tagName.toLowerCase() == 'form') {
@@ -346,17 +397,50 @@ export let register = Template.binders['validator'] = Template.binders['validate
 }
 
 
-
-export function add (x: string, fun, errMsg: string = '') {
+/**
+ * 添加验证规则
+ * @param x 规则名称 
+ * @param fun 验证函数 
+ * @param errMsg 失败提示 
+ * @example
+ * ```ts
+ * import * as validator from 'mcore-ext/binder/validator'
+ * 
+ * validator.add('eq0', (x)=> {
+ *      return x === 0
+ * }, '不等于 0 ')
+ * 
+ * validator.add('eqX', (x)=> {
+ *      return x === 0
+ * }, (x) => `不等于 ${x}`)
+ * ```
+ * #### use
+ * 
+ * ```html
+ * <form mc-validator="save">
+ *      <input type="number" name="user-name" validator="trim | required | eq0" />
+ *      <input type="number" name="user-name" validator="trim | required | eqX 10" />
+ *      <button type="submit">Save</button>
+ * </form>
+ * ```
+ */
+export function add (x: string, fun, errMsg: string | any = '') {
     _rule[x] = fun
     if (errMsg) _errMsg[x] = errMsg 
 }
 
-export function addErrMsg (type: string, msg: string) {
-    _errMsg[type] = msg
-}
-
-export function check (...args) {
+/**
+ * 调用验证规则
+ * @example
+ * ```ts
+ * import * as validator from 'mcore-ext/binder/validator'
+ * 
+ * console.log(validator.check('isEmail', 'xxx@gmail.com')) // return true
+ * console.log(validator.check('isEmail', 'xxx@gmailcom')) // return false
+ * console.log(validator.check('minLength', 'test', 10)) // return false
+ * ```
+ */
+export function check (...args): boolean {
     if (args.length < 2) return false 
     let type = args[0]
     args.splice(0, 1)
@@ -364,4 +448,12 @@ export function check (...args) {
     if (!_rule[type]) return false 
 
     return _rule[type].apply(null, args)
+}
+
+/**
+ * 添加或替换错误提示信息
+ * **注** 通常用于 i18n
+ */
+export function addErrMsg (type: string, msg: string | any) {
+    _errMsg[type] = msg
 }

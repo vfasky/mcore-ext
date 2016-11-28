@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@types/chai": "^3.4.34",
+    "@types/fs-extra": "^0.0.34",
     "@types/glob": "^5.0.30",
     "@types/jquery": "^2.0.33",
     "@types/mocha": "^2.2.32",
@@ -14,6 +15,7 @@
     "compiler-webpack-plugin": "^0.0.1",
     "css-loader": "^0.25.0",
     "form-serializer": "^2.5.0",
+    "fs-extra": "^1.0.0",
     "glob": "^7.1.1",
     "jquery": "^3.1.1",
     "jsdom": "^9.8.3",
@@ -26,6 +28,8 @@
     "source-map-support": "^0.4.6",
     "sprintf-js": "^1.0.3",
     "style-loader": "^0.13.1",
+    "ts-node": "^1.7.0",
+    "typedoc": "^0.5.1",
     "typescript": "^2.0.6",
     "webpack": "^1.13.3",
     "webpack-node-externals": "^1.5.4"
@@ -33,7 +37,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "node test.js",
-    "build": "tsc -w"
+    "build": "tsc -w",
+    "doc": "mcore doc ./ui ./util ./formatters ./binder"
   },
   "repository": {
     "type": "git",

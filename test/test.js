@@ -71,7 +71,7 @@
 	            err: 'err msg'
 	        });
 	        index_1.default.onRender(popover, function () {
-	            $popover = index_1.default.$(popover.el).find('.mc-popover');
+	            $popover = index_1.default.$(popover.el).find('.mc-ui-popover');
 	            index_1.default.expect($popover.find('.mc-popover-inner').text().trim()).to.equal('err msg');
 	            index_1.default.expect($popover.is('.active')).to.equal(true);
 	            done();
@@ -377,7 +377,7 @@
 	                __mc__dynamicAttr = {},
 	                __mc__event = {}
 
-	            __mc__dynamicAttr['class'] = __mc__util.parseDynamicVal(('mc-popover ' + scope.className), '\'mc-popover \' + scope.className')
+	            __mc__dynamicAttr['class'] = __mc__util.parseDynamicVal(('mc-ui-popover ' + scope.className), '\'mc-ui-popover \' + scope.className')
 
 
 	            // build
