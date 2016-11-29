@@ -1,7 +1,7 @@
 /// <reference path="../../declaration/require.d.ts" />
 
 /**
- * 表单错误提醒
+ * 表单错误显示
  * @author vfasky<vfasky@gmail.com>
  * 
  **/
@@ -16,6 +16,21 @@ interface ErrDataValue {
     err: string
 }
 
+/** 
+ * @example
+ * 表单错误显示
+ * > 通常用于显示 `mcore-ext/binder/validator` 错误信息
+ * 
+ * ```ts
+ * import Popover from 'mcore-ext/ui/popover'
+ * let popover = new Popover(document.body)
+ * 
+ * popover.showError({
+ *     $el: $('input'),
+ *     err: 'err msg'
+ * })
+ * ```
+ **/
 export default class Popover extends Component {
     showTime = 3000
     hideTimeId = null

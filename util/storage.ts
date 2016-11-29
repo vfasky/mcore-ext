@@ -18,6 +18,16 @@ if (typeof localStorage != 'undefned') {
 
 /**
  * 取数据
+ * @example
+ * 
+ * ```ts
+ * import * as storage from 'mcore-ext/util/storage'
+ * 
+ * storage.set('test', {ok: 0})
+ * storage.get('test') // {ok: 0}
+ * storage.remove('test')
+ * storage.get('test') // null
+ * ```
  */
 export function get(key: string, defaultVal: any = null) {
     let data = storage.getItem(key)

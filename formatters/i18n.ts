@@ -65,7 +65,9 @@ export default function i18n (...args) {
     return sprintf.apply(this, args)
 }
 
-
+/**
+ * 没有查到字典时，执行
+ */
 export function setNotMatchCalllback (callback) {
     _noMatchCallback = callback
 }
@@ -84,10 +86,30 @@ export function loadDict (name: string, dict) {
 
 /**
  * @example
+ * ```ts
+ * import { loadDict, setLocal } from 'mcore-ext/formatters/i18n'
+ * import i18n from 'mcore-ext/formatters/i18n'
  * 
+ * // 加载语言包
+ * loadDict('zh-CN', {
+ *      'hello %s': '您好 %s'
+ * })
+ * 
+ * // 使用语言包
+ * setLocal('zh-CN')
+ * 
+ * console.log(i18n('hello %s' | _ 'mcore')) // 您好 mcore
+ * 
+ * ```
+ * ##### use
  * ```html
  * {'hello %s' | _ 'mcore'}
- * <input mc-placeholder="'hello %s' | _ 'mcore'">
+ * <input mc-placeholder="'hello %s' | _ 'mcore'"> 
+ * 
+ * out:
+ * 
+ * 您好 mcore
+ * <input placeholder="您好 mcore">
  * ```
  */
 export let register = Template.formatters['i18n'] = Template.formatters['_'] = i18n

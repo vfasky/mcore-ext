@@ -16,6 +16,16 @@ if (typeof localStorage != 'undefned') {
 }
 /**
  * 取数据
+ * @example
+ *
+ * ```ts
+ * import * as storage from 'mcore-ext/util/storage'
+ *
+ * storage.set('test', {ok: 0})
+ * storage.get('test') // {ok: 0}
+ * storage.remove('test')
+ * storage.get('test') // null
+ * ```
  */
 function get(key, defaultVal) {
     if (defaultVal === void 0) { defaultVal = null; }
