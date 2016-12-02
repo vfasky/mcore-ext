@@ -4,8 +4,8 @@
  *
  **/
 'use strict';
-var testUtil_1 = require('./testUtil');
-var path = require('path');
+var testUtil_1 = require("./testUtil");
+var path = require("path");
 testUtil_1.default.setup({
     testFiles: [
         './ui/**/test.js',

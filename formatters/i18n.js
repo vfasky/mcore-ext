@@ -4,8 +4,8 @@
  *
  **/
 'use strict';
-var sprintf_js_1 = require('sprintf-js');
-var mcore3_1 = require('mcore3');
+var sprintf_js_1 = require("sprintf-js");
+var mcore3_1 = require("mcore3");
 /**
  * 存放语言包翻译字典
  */
@@ -61,6 +61,9 @@ function i18n() {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = i18n;
+/**
+ * 没有查到字典时，执行
+ */
 function setNotMatchCalllback(callback) {
     _noMatchCallback = callback;
 }
@@ -79,10 +82,30 @@ function loadDict(name, dict) {
 exports.loadDict = loadDict;
 /**
  * @example
+ * ```ts
+ * import { loadDict, setLocal } from 'mcore-ext/formatters/i18n'
+ * import i18n from 'mcore-ext/formatters/i18n'
  *
+ * // 加载语言包
+ * loadDict('zh-CN', {
+ *      'hello %s': '您好 %s'
+ * })
+ *
+ * // 使用语言包
+ * setLocal('zh-CN')
+ *
+ * console.log(i18n('hello %s' | _ 'mcore')) // 您好 mcore
+ *
+ * ```
+ * ##### use
  * ```html
  * {'hello %s' | _ 'mcore'}
  * <input mc-placeholder="'hello %s' | _ 'mcore'">
+ *
+ * out:
+ *
+ * 您好 mcore
+ * <input placeholder="您好 mcore">
  * ```
  */
 exports.register = mcore3_1.Template.formatters['i18n'] = mcore3_1.Template.formatters['_'] = i18n;

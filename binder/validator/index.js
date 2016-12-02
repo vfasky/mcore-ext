@@ -5,9 +5,9 @@
  *
  **/
 'use strict';
-var $ = require('jquery');
-var mcore3_1 = require('mcore3');
-require('form-serializer');
+var $ = require("jquery");
+var mcore3_1 = require("mcore3");
+require("form-serializer");
 if (typeof String.prototype.trim === 'undefined') {
     String.prototype.trim = function (x) {
         return $.trim(x);
@@ -162,12 +162,12 @@ var _errMsg = {
     isNumber: '只能是数字',
     isAlphabet: '只能是字母',
     onlyDigitAndAlpha: '只能是字母和数字',
-    minlength: function (len) { return ("\u6700\u5C0F " + len + " \u4F4D\u5B57\u7B26"); },
-    minChrLen: function (len) { return ("\u6700\u5C0F " + len + " \u4E2A\u4E2D\u6587 \u6216  " + Number(len) * 2 + " \u4E2A\u82F1\u6587"); },
-    maxChrLen: function (len) { return ("\u6700\u591A " + len + " \u4E2A\u4E2D\u6587 \u6216  " + Number(len) * 2 + " \u4E2A\u82F1\u6587"); },
-    maxlength: function (len) { return ("\u6700\u591A " + len + " \u4F4D\u5B57\u7B26"); },
-    min: function (min) { return ("\u6570\u503C\u8981\u5927\u4E8E " + min); },
-    max: function (max) { return ("\u6570\u503C\u8981\u5C0F\u4E8E " + max); },
+    minlength: function (len) { return "\u6700\u5C0F " + len + " \u4F4D\u5B57\u7B26"; },
+    minChrLen: function (len) { return "\u6700\u5C0F " + len + " \u4E2A\u4E2D\u6587 \u6216  " + Number(len) * 2 + " \u4E2A\u82F1\u6587"; },
+    maxChrLen: function (len) { return "\u6700\u591A " + len + " \u4E2A\u4E2D\u6587 \u6216  " + Number(len) * 2 + " \u4E2A\u82F1\u6587"; },
+    maxlength: function (len) { return "\u6700\u591A " + len + " \u4F4D\u5B57\u7B26"; },
+    min: function (min) { return "\u6570\u503C\u8981\u5927\u4E8E " + min; },
+    max: function (max) { return "\u6570\u503C\u8981\u5C0F\u4E8E " + max; },
     equals: '两次输入的值不相符',
     isEmail: '邮箱格式不正确',
     isInteger: '数值必须是整数',

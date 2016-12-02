@@ -33,8 +33,9 @@ export default {
 }
 
 interface SetupConfig {
-    output: string,
-    testFiles: string[]
+    output: string;
+    testFiles: string[];
+    webpackConfig?: any;
 }
 
 function onRender(component, done, time = 0){
@@ -53,7 +54,7 @@ function setup(config: SetupConfig) {
     config.testFiles.forEach((file) => {
         testFiles = testFiles.concat(glob.sync(file))
     })
-    let webpackConfig = {
+    let webpackConfig = Object.assign({
         entry: {
             test: testFiles
         },
@@ -63,14 +64,25 @@ function setup(config: SetupConfig) {
         },
         target: 'node',
         externals: [nodeExternals()],
+        resolve: {
+            extensions: ['', '.es6', '.js', '.ts', '.coffee', '.scss'],
+        },
         module: {
             loaders: [{
                 test: /\.tpl$/,
                 loader: path.resolve(__dirname, '../node_modules/mcore3/dist/h2svd-loader.js')
+            },{
+                test: /\.ts$/,
+                loader: 'ts-loader'
             }, {
                 test: /jquery[!mcore]/,
                 loader: 'expose?$!expose?jQuery'
             }]
+        },
+        ts: {
+            logLevel: 'error',
+            silent: true,
+            transpileOnly: true
         },
         devtool: '',
         plugins: [
@@ -82,7 +94,7 @@ function setup(config: SetupConfig) {
                 mocha.run()
             })
         ]
-    }
+    }, config.webpackConfig || {} )
     
     let compiler = webpack(webpackConfig)
     compiler.run(function(err, stats) {

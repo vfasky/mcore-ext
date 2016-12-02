@@ -6,16 +6,16 @@
  *
  **/
 'use strict';
-require('jsdom-global/register');
-require('source-map-support/register');
-var chai_1 = require('chai');
-var $ = require('jquery');
-var glob = require('glob');
-var path = require('path');
-var webpack = require('webpack');
-var CompilerPlugin = require('compiler-webpack-plugin');
-var nodeExternals = require('webpack-node-externals');
-var Mocha = require('mocha');
+require("jsdom-global/register");
+require("source-map-support/register");
+var chai_1 = require("chai");
+var $ = require("jquery");
+var glob = require("glob");
+var path = require("path");
+var webpack = require("webpack");
+var CompilerPlugin = require("compiler-webpack-plugin");
+var nodeExternals = require("webpack-node-externals");
+var Mocha = require("mocha");
 var testApp;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
@@ -46,7 +46,7 @@ function setup(config) {
     config.testFiles.forEach(function (file) {
         testFiles = testFiles.concat(glob.sync(file));
     });
-    var webpackConfig = {
+    var webpackConfig = Object.assign({
         entry: {
             test: testFiles
         },
@@ -56,14 +56,25 @@ function setup(config) {
         },
         target: 'node',
         externals: [nodeExternals()],
+        resolve: {
+            extensions: ['', '.es6', '.js', '.ts', '.coffee', '.scss'],
+        },
         module: {
             loaders: [{
                     test: /\.tpl$/,
                     loader: path.resolve(__dirname, '../node_modules/mcore3/dist/h2svd-loader.js')
                 }, {
+                    test: /\.ts$/,
+                    loader: 'ts-loader'
+                }, {
                     test: /jquery[!mcore]/,
                     loader: 'expose?$!expose?jQuery'
                 }]
+        },
+        ts: {
+            logLevel: 'error',
+            silent: true,
+            transpileOnly: true
         },
         devtool: '',
         plugins: [
@@ -75,7 +86,7 @@ function setup(config) {
                 mocha.run();
             })
         ]
-    };
+    }, config.webpackConfig || {});
     var compiler = webpack(webpackConfig);
     compiler.run(function (err, stats) {
         if (err)

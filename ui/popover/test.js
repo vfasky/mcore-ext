@@ -4,8 +4,8 @@
  *
  **/
 'use strict';
-var index_1 = require('../../testUtil/index');
-var popover_1 = require('./popover');
+var index_1 = require("../../testUtil/index");
+var popover_1 = require("./popover");
 var popover;
 var $popover;
 describe('test ui popover', function () {

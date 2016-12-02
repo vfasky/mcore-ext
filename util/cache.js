@@ -4,7 +4,7 @@
  *
  **/
 'use strict';
-var storage = require('./storage');
+var storage = require("./storage");
 var CACHE_PRE = '__mc_cache_';
 var MAX_TIME = 3600 * 24 * 1000 * 1000;
 /**

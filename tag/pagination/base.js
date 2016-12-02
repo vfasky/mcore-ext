@@ -9,11 +9,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var mcore3_1 = require('mcore3');
+var mcore3_1 = require("mcore3");
 var PaginationBase = (function (_super) {
     __extends(PaginationBase, _super);
     function PaginationBase() {
-        _super.apply(this, arguments);
+        return _super.apply(this, arguments) || this;
     }
     PaginationBase.prototype.buildPage = function (pageInfo) {
         if (pageInfo === void 0) { pageInfo = {}; }

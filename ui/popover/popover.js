@@ -1,6 +1,6 @@
 /// <reference path="../../declaration/require.d.ts" />
 /**
- * 表单错误提醒
+ * 表单错误显示
  * @author vfasky<vfasky@gmail.com>
  *
  **/
@@ -10,15 +10,31 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var $ = require('jquery');
-var mcore3_1 = require('mcore3');
+var $ = require("jquery");
+var mcore3_1 = require("mcore3");
 var $DOC = $(document);
+/**
+ * @example
+ * 表单错误显示
+ * > 通常用于显示 `mcore-ext/binder/validator` 错误信息
+ *
+ * ```ts
+ * import Popover from 'mcore-ext/ui/popover'
+ * let popover = new Popover(document.body)
+ *
+ * popover.showError({
+ *     $el: $('input'),
+ *     err: 'err msg'
+ * })
+ * ```
+ **/
 var Popover = (function (_super) {
     __extends(Popover, _super);
     function Popover() {
-        _super.apply(this, arguments);
-        this.showTime = 3000;
-        this.hideTimeId = null;
+        var _this = _super.apply(this, arguments) || this;
+        _this.showTime = 3000;
+        _this.hideTimeId = null;
+        return _this;
     }
     Popover.prototype.getOffset = function () {
         var $el = this.$curEl;
@@ -78,4 +94,19 @@ var Popover = (function (_super) {
     return Popover;
 }(mcore3_1.Component));
 Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * @example
+ * 表单错误显示
+ * > 通常用于显示 `mcore-ext/binder/validator` 错误信息
+ *
+ * ```ts
+ * import Popover from 'mcore-ext/ui/popover'
+ * let popover = new Popover(document.body)
+ *
+ * popover.showError({
+ *     $el: $('input'),
+ *     err: 'err msg'
+ * })
+ * ```
+ **/
 exports.default = Popover;
