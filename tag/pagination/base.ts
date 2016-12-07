@@ -1,7 +1,7 @@
 /**
  * pagination base
  * @author vfasky<vfasky@gmail.com>
- * 
+ *
  **/
 'use strict'
 
@@ -56,10 +56,12 @@ export default class PaginationBase extends Component{
             if (end < pageInfo.maxPage - 1) {
                 end = pageInfo.maxPage - 1
             }
-            if ((end - start) <= step) {
-                start = start - (step - (pageInfo.totalPage - end))
+
+            if (pageInfo.totalPage - pageInfo.currentPage < step) {
+                start = pageInfo.totalPage - (pageInfo.maxPage - 2)
             }
-            for (let v = start; v <= end; v++) {
+
+            for (let v = start, j = end; v <= j; v++) {
                 pages.push({
                     cur: v == pageInfo.currentPage,
                     page: v
