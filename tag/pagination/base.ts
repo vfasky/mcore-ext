@@ -4,10 +4,9 @@
  *
  **/
 'use strict'
+import * as mcore from 'mcore3'
 
-import { Component } from 'mcore3'
-
-export default class PaginationBase extends Component{
+export default class PaginationBase extends mcore.Component{
 
     buildPage(pageInfo: any = {}) {
         pageInfo = {

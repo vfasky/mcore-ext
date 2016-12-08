@@ -14,7 +14,7 @@ let $popover
 describe('test ui popover', () => {
 
     it('new popover', () => {
-        popover = new Popover(testUtil.$('<div/>')[0])
+        popover = new Popover(<any>testUtil.$('<div/>')[0])
     })
 
     it('show error', (done) => {

@@ -10,6 +10,7 @@
             "es5"
         ],
         "sourceMap": false,
+        "importHelpers": true,
         "allowJs": true
     },
     "include": [

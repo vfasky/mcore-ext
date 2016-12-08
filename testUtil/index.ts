@@ -52,7 +52,9 @@ function onRender(component, done, time = 0){
 function setup(config: SetupConfig) {
     let testFiles = []
     config.testFiles.forEach((file) => {
-        testFiles = testFiles.concat(glob.sync(file))
+        testFiles = testFiles.concat(glob.sync(file).map((v) => {
+            return path.resolve(v)
+        }))
     })
     let webpackConfig = Object.assign({
         entry: {

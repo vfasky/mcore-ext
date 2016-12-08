@@ -4,14 +4,10 @@
  *
  **/
 'use strict';
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var mcore3_1 = require("mcore3");
+var tslib_1 = require("tslib");
+var mcore = require("mcore3");
 var PaginationBase = (function (_super) {
-    __extends(PaginationBase, _super);
+    tslib_1.__extends(PaginationBase, _super);
     function PaginationBase() {
         return _super.apply(this, arguments) || this;
     }
@@ -58,10 +54,10 @@ var PaginationBase = (function (_super) {
             if (end < pageInfo.maxPage - 1) {
                 end = pageInfo.maxPage - 1;
             }
-            if ((end - start) <= step) {
-                start = start - (step - (pageInfo.totalPage - end));
+            if (pageInfo.totalPage - pageInfo.currentPage < step) {
+                start = pageInfo.totalPage - (pageInfo.maxPage - 2);
             }
-            for (var v = start; v <= end; v++) {
+            for (var v = start, j = end; v <= j; v++) {
                 pages.push({
                     cur: v == pageInfo.currentPage,
                     page: v
@@ -89,6 +85,6 @@ var PaginationBase = (function (_super) {
         });
     };
     return PaginationBase;
-}(mcore3_1.Component));
+}(mcore.Component));
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = PaginationBase;

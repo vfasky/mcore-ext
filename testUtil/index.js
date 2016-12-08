@@ -44,8 +44,11 @@ function onRender(component, done, time) {
 function setup(config) {
     var testFiles = [];
     config.testFiles.forEach(function (file) {
-        testFiles = testFiles.concat(glob.sync(file));
+        testFiles = testFiles.concat(glob.sync(file).map(function (v) {
+            return path.resolve(v);
+        }));
     });
+    console.log(testFiles);
     var webpackConfig = Object.assign({
         entry: {
             test: testFiles
@@ -62,7 +65,7 @@ function setup(config) {
         module: {
             loaders: [{
                     test: /\.tpl$/,
-                    loader: path.resolve(__dirname, '../node_modules/mcore3/dist/h2svd-loader.js')
+                    loader: path.resolve('../node_modules/mcore3/dist/h2svd-loader.js')
                 }, {
                     test: /\.ts$/,
                     loader: 'ts-loader'
