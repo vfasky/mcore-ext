@@ -5,7 +5,9 @@
  **/
 'use strict';
 var sprintf_js_1 = require("sprintf-js");
-var mcore3_1 = require("mcore3");
+var mcore = require("mcore3");
+var Template = mcore.Template;
+var util = mcore.util;
 /**
  * 存放语言包翻译字典
  */
@@ -50,7 +52,7 @@ function i18n() {
         return args[0] || '';
     for (var i = 0, len = args.length; i < len; i++) {
         var v = args[i];
-        if (mcore3_1.util.isArray(v)) {
+        if (util.isArray(v)) {
             args[i] = v.length;
         }
         else if (v === undefined) {
@@ -108,5 +110,5 @@ exports.loadDict = loadDict;
  * <input placeholder="您好 mcore">
  * ```
  */
-exports.register = mcore3_1.Template.formatters['i18n'] = mcore3_1.Template.formatters['_'] = i18n;
-mcore3_1.Template.formatters['%'] = mcore3_1.Template.formatters['sprintf'] = sprintf_js_1.sprintf;
+exports.register = Template.formatters['i18n'] = Template.formatters['_'] = i18n;
+Template.formatters['%'] = Template.formatters['sprintf'] = sprintf_js_1.sprintf;

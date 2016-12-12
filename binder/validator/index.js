@@ -6,7 +6,7 @@
  **/
 'use strict';
 var $ = require("jquery");
-var mcore3_1 = require("mcore3");
+var mcore = require("mcore3");
 require("form-serializer");
 if (typeof String.prototype.trim === 'undefined') {
     String.prototype.trim = function (x) {
@@ -184,7 +184,7 @@ function parseValidator($el, rules, $form) {
     var validatorAttr = $el.attr('validator').trim();
     if (!validatorAttr)
         return;
-    mcore3_1.util.each(validatorAttr.split('|'), function (v) {
+    mcore.util.each(validatorAttr.split('|'), function (v) {
         var diyErr;
         var err;
         var ix = String(v).indexOf(' err:');
@@ -295,7 +295,7 @@ function getNameValue(data, name, $el) {
  * | maxChrLen  | 最多 ${len} 个中文 或  ${len * 2} 个英文 | len {number}            |
  *
  */
-exports.register = mcore3_1.Template.binders['validator'] = mcore3_1.Template.binders['validated'] = {
+exports.register = mcore.Template.binders['validator'] = mcore.Template.binders['validated'] = {
     update: function (el, value) {
         if (el.tagName.toLowerCase() == 'form') {
             el.setAttribute('novalidate', 'novalidate');
@@ -307,8 +307,8 @@ exports.register = mcore3_1.Template.binders['validator'] = mcore3_1.Template.bi
         if (el.tagName.toLowerCase() != 'form' || !el._element) {
             return el.setAttribute('validator', value);
         }
-        var callback = mcore3_1.Template.strToFun(el, value) || function () { };
-        var proxyEnv = mcore3_1.Template.getEnv(el);
+        var callback = mcore.Template.strToFun(el, value) || function () { };
+        var proxyEnv = mcore.Template.getEnv(el);
         var $form = $(el);
         // 禁用 html5 验证
         el.setAttribute('novalidate', 'novalidate');

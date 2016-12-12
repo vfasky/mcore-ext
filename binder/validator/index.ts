@@ -7,7 +7,7 @@
 'use strict'
 
 import * as $ from 'jquery'
-import { Template, util } from 'mcore3'
+import * as mcore from 'mcore3'
 import 'form-serializer'
 
 if (typeof String.prototype.trim === 'undefined') {
@@ -183,19 +183,19 @@ let _errMsg = {
 }
 
 // 解释验证规则
-function parseValidator ($el: JQuery, rules = [], $form: JQuery) {
+function parseValidator($el: JQuery, rules = [], $form: JQuery) {
     let name = $el.attr('name')
-    if (!name) return  
-    
+    if (!name) return
+
     let validatorAttr = $el.attr('validator').trim()
 
-    if (!validatorAttr) return  
+    if (!validatorAttr) return
 
-    util.each(validatorAttr.split('|'), (v) => {
+    mcore.util.each(validatorAttr.split('|'), (v) => {
         let diyErr
         let err
         let ix = String(v).indexOf(' err:')
-        if(ix != -1) {
+        if (ix != -1) {
             let eT = v.split(' err:')
             v = eT[0]
             diyErr = eT[1]
@@ -217,7 +217,7 @@ function parseValidator ($el: JQuery, rules = [], $form: JQuery) {
         if (diyErr) {
             err = diyErr
         } else {
-            if ($.isFunction(_errMsg[ruleType])){
+            if ($.isFunction(_errMsg[ruleType])) {
                 let msgArgs = args.slice(0)
                 msgArgs.splice(0, 1)
                 err = _errMsg[ruleType].apply($el[0], msgArgs)
@@ -227,7 +227,7 @@ function parseValidator ($el: JQuery, rules = [], $form: JQuery) {
         }
 
         args[0] = $el
-        if (ruleType == 'equals') args[1] = $form.find(args[1]).eq(0) 
+        if (ruleType == 'equals') args[1] = $form.find(args[1]).eq(0)
 
         rules.push({
             name: name,
@@ -240,10 +240,10 @@ function parseValidator ($el: JQuery, rules = [], $form: JQuery) {
 }
 
 // 取规则
-function getRules ($form: JQuery) {
+function getRules($form: JQuery) {
     let rules = []
 
-    $form.find('[validator]').each(function(){
+    $form.find('[validator]').each(function () {
         parseValidator($(this), rules, $form)
     })
 
@@ -251,9 +251,9 @@ function getRules ($form: JQuery) {
 }
 
 // 取对应name的值
-function getNameValue (data, name: string, $el: JQuery) {
+function getNameValue(data, name: string, $el: JQuery) {
     name = String(name)
-    if (-1 == name.indexOf('[')){
+    if (-1 == name.indexOf('[')) {
         return data[name] || ''
     }
     return $el.val().trim()
@@ -311,8 +311,8 @@ function getNameValue (data, name: string, $el: JQuery) {
  * | maxChrLen  | 最多 ${len} 个中文 或  ${len * 2} 个英文 | len {number}            |
  * 
  */
-export let register = Template.binders['validator'] = Template.binders['validated'] = {
-    update: function (el: HTMLElement, value){
+export let register = mcore.Template.binders['validator'] = mcore.Template.binders['validated'] = {
+    update: function (el: HTMLElement, value) {
         if (el.tagName.toLowerCase() == 'form') {
             el.setAttribute('novalidate', 'novalidate')
             return
@@ -326,26 +326,26 @@ export let register = Template.binders['validator'] = Template.binders['validate
             return el.setAttribute('validator', value)
         }
 
-        let callback = Template.strToFun(el, value) || function(){}
-        let proxyEnv = Template.getEnv(el)
+        let callback = mcore.Template.strToFun(el, value) || function () { }
+        let proxyEnv = mcore.Template.getEnv(el)
         let $form = $(el)
         // 禁用 html5 验证
         el.setAttribute('novalidate', 'novalidate')
 
-        function validatorForm (callback = function(err, data){}) {
+        function validatorForm(callback = function (err, data) { }) {
             let rules = getRules($form)
             let data = (<any>$form).serializeObject()
             let err = null
 
-            $.each(rules, (k, v)=>{
+            $.each(rules, (k, v) => {
                 let $el = v.args[0]
                 let _value = getNameValue(data, v.name, $el)
 
                 if (v.type != 'required' && (_value == '' || _value == undefined)) return
 
                 let value = {
-                    toString: () => String(_value) ,
-                    toNumber: () => Number(_value) ,
+                    toString: () => String(_value),
+                    toNumber: () => Number(_value),
                     $el: $el,
                     $form: $form
                 }
@@ -354,7 +354,7 @@ export let register = Template.binders['validator'] = Template.binders['validate
 
                 let checkRes = v.rule.apply(null, v.args)
 
-                if (false === checkRes){
+                if (false === checkRes) {
                     err = {
                         $el: $el,
                         err: v.err,
@@ -374,10 +374,10 @@ export let register = Template.binders['validator'] = Template.binders['validate
 
         // 注入上下文
         if (proxyEnv && !proxyEnv[value + 'Check']) {
-            proxyEnv[value + 'Check'] = function(){
+            proxyEnv[value + 'Check'] = function () {
                 return new Promise((resolve, reject) => {
-                    validatorForm((err, data)=>{
-                        if(err) return reject(err)
+                    validatorForm((err, data) => {
+                        if (err) return reject(err)
                         resolve(data)
                     })
                 })
@@ -424,9 +424,9 @@ export let register = Template.binders['validator'] = Template.binders['validate
  * </form>
  * ```
  */
-export function add (x: string, fun, errMsg: string | any = '') {
+export function add(x: string, fun, errMsg: string | any = '') {
     _rule[x] = fun
-    if (errMsg) _errMsg[x] = errMsg 
+    if (errMsg) _errMsg[x] = errMsg
 }
 
 /**
@@ -440,12 +440,12 @@ export function add (x: string, fun, errMsg: string | any = '') {
  * console.log(validator.check('minLength', 'test', 10)) // return false
  * ```
  */
-export function check (...args): boolean {
-    if (args.length < 2) return false 
+export function check(...args): boolean {
+    if (args.length < 2) return false
     let type = args[0]
     args.splice(0, 1)
 
-    if (!_rule[type]) return false 
+    if (!_rule[type]) return false
 
     return _rule[type].apply(null, args)
 }
@@ -454,6 +454,6 @@ export function check (...args): boolean {
  * 添加或替换错误提示信息
  * **注** 通常用于 i18n
  */
-export function addErrMsg (type: string, msg: string | any) {
+export function addErrMsg(type: string, msg: string | any) {
     _errMsg[type] = msg
 }

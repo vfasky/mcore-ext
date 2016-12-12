@@ -6,8 +6,9 @@
 'use strict'
 
 import { sprintf } from 'sprintf-js'
-
-import { Template, util } from 'mcore3'
+import * as mcore from 'mcore3'
+const Template = mcore.Template
+const util = mcore.util
 
 /**
  * 存放语言包翻译字典

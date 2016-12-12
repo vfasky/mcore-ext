@@ -7,7 +7,7 @@
 'use strict';
 var tslib_1 = require("tslib");
 var $ = require("jquery");
-var mcore3_1 = require("mcore3");
+var mcore = require("mcore3");
 var $DOC = $(document);
 /**
  * @example
@@ -88,7 +88,7 @@ var Popover = (function (_super) {
         });
     };
     return Popover;
-}(mcore3_1.Component));
+}(mcore.Component));
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * @example

@@ -48,7 +48,6 @@ function setup(config) {
             return path.resolve(v);
         }));
     });
-    console.log(testFiles);
     var webpackConfig = Object.assign({
         entry: {
             test: testFiles
@@ -65,7 +64,7 @@ function setup(config) {
         module: {
             loaders: [{
                     test: /\.tpl$/,
-                    loader: path.resolve('../node_modules/mcore3/dist/h2svd-loader.js')
+                    loader: path.resolve(__dirname, '../node_modules/mcore3/dist/h2svd-loader.js')
                 }, {
                     test: /\.ts$/,
                     loader: 'ts-loader'

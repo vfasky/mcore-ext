@@ -7,11 +7,11 @@
  **/
 'use strict'
 import * as $ from 'jquery'
-import { Component } from 'mcore3'
+import * as mcore from 'mcore3'
 
 const $DOC = $(document)
 
-interface ErrDataValue {
+export interface ErrDataValue {
     $el: JQuery,
     err: string
 }
@@ -31,7 +31,7 @@ interface ErrDataValue {
  * })
  * ```
  **/
-export default class Popover extends Component {
+export default class Popover extends mcore.Component {
     showTime = 3000
     hideTimeId = null
     /**
